@@ -7,11 +7,11 @@ const Pokemon = ({ pokemon }) => {
   )
 }
 
-export default function Pokemones({pokemones}) {
-  console.log(pokemones)
+export default function Index({pokemones}) {
+  // console.log(pokemones)
   return (
     <div>
-      <p>Pokemones</p>
+      <p data-testid="titulo" >App de Pokemones</p>
       <ul>
         {pokemones.map(pokemon => (
          <Pokemon key={pokemon.name} pokemon={pokemon} />
